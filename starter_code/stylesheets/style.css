@@ -90,6 +90,7 @@ footer links grey: #454245
 
   #googleButton p {
     margin-left: 0;
+    padding-right: 39px;
   }
 
   #googleButton img {
@@ -356,12 +357,6 @@ footer links grey: #454245
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom-left-radius: 100%;
-    border-bottom-right-radius: 100%;
-    width: 200%;
-    overflow: hidden;
-    margin-left: -50%;
-    padding-bottom: 100px;
   }
 
   #digitalHQ h3 {
@@ -372,7 +367,7 @@ footer links grey: #454245
   }
 
   #digitalHQ #try {
-    background-color: #white;
+    background-color: white;
     border: none;
     padding: 10px 20px;
     color: #540b51;
@@ -400,6 +395,23 @@ footer links grey: #454245
     padding: 20px;
     text-transform: uppercase;
     order: 1;
+  }
+
+  .shape {
+    position: relative;
+    overflow: hidden;
+    height: 80px;
+  }
+  
+  .shape::before {
+    border-radius: 100%;
+    position: absolute;
+    background: #540b51;
+    right: -200px;
+    left: -200px;
+    top: -200px;
+    content: '';
+    bottom: 0;
   }
   small {
     padding-left: 50px;
@@ -488,6 +500,7 @@ footer links grey: #454245
 
   #googleButton p {
     margin-left: 0;
+    padding-right: 39px;
   }
 
   #googleButton img {
@@ -651,8 +664,7 @@ footer links grey: #454245
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-left: ;
-  }
+    }
 
   #rely li p {
     width: 25vw;
@@ -716,7 +728,7 @@ footer links grey: #454245
   }
 
   #digitalHQ #try {
-    background-color: #white;
+    background-color: white;
     border: none;
     padding: 10px 20px;
     color: #540b51;
@@ -749,8 +761,8 @@ footer links grey: #454245
   .footerBottom {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-left: o;
+    justify-content: space-around;
+    padding-left: 0;
   }
 
   .footerBottom li {
@@ -808,12 +820,7 @@ footer links grey: #454245
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom-left-radius: 100%;
-    border-bottom-right-radius: 100%;
-    width: 200%;
-    overflow: hidden;
-    margin-left: -50%;
-    padding-bottom: 100px;
+   
   }
 
   #digitalHQ h3 {
@@ -824,7 +831,7 @@ footer links grey: #454245
   }
 
   #digitalHQ #try {
-    background-color: #white;
+    background-color: white;
     border: none;
     padding: 10px 20px;
     color: #540b51;
@@ -852,6 +859,23 @@ footer links grey: #454245
     padding: 20px;
     text-transform: uppercase;
     order: 1;
+  }
+
+  .shape {
+    position: relative;
+    overflow: hidden;
+    height: 80px;
+  }
+  
+  .shape::before {
+    border-radius: 100%;
+    position: absolute;
+    background: #540b51;
+    right: -200px;
+    left: -200px;
+    top: -200px;
+    content: '';
+    bottom: 0;
   }
 }
 
@@ -944,7 +968,7 @@ footer links grey: #454245
 
   header h1 {
     color: white;
-    font-size: 45px;
+    font-size: 75px;
   }
 
   header p {
@@ -995,7 +1019,8 @@ footer links grey: #454245
 
   #googleButton p {
     margin-left: 0;
-  }
+    padding-right: 39px;
+    }
 
   #googleButton img {
     background-color: white;
@@ -1016,7 +1041,7 @@ footer links grey: #454245
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    width: 50vw;
+    width: 100vw;
     align-items: flex-start;
   }
 
@@ -1158,7 +1183,6 @@ footer links grey: #454245
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-left: ;
   }
 
   #rely li p {
@@ -1225,26 +1249,19 @@ footer links grey: #454245
   #digitalHQ h3 {
     font-size: 50px;
   }
-  /* Due to workaround to make the bottom of the div curved, I cant used Flex Direction row to put the buttons side bny side */
-  #digitalHQ {
+    #digitalHQ {
     background-color: #540b51;
     color: white;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border-bottom-left-radius: 100%;
-    border-bottom-right-radius: 100%;
-    width: 200%;
-    overflow: hidden;
-    margin-left: -50%;
-    padding-bottom: 100px;
-  }
+   }
 
   #digitalHQ #try {
-    background-color: #white;
+    background-color: white;
     border: none;
     padding: 10px 20px;
     color: #540b51;
@@ -1254,7 +1271,7 @@ footer links grey: #454245
     padding: 20px;
     font-size: 15px;
     text-transform: uppercase;
-    order: 2;
+    order: 1;
     font-weight: 700;
   }
 
@@ -1271,15 +1288,36 @@ footer links grey: #454245
     border-radius: 3px;
     padding: 20px;
     text-transform: uppercase;
-    order: 1;
+    order: 2;
+  }
+
+  #hQButtons {
+    width: 100vw;
+  }
+
+  .shape {
+    position: relative;
+    overflow: hidden;
+    height: 80px;
+  }
+  
+  .shape::before {
+    border-radius: 100%;
+    position: absolute;
+    background: #540b51;
+    right: -200px;
+    left: -200px;
+    top: -200px;
+    content: '';
+    bottom: 0;
   }
 
   .footerBottom {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-left: o;
-  }
+    justify-content: space-around;
+    padding-left: 0;
+   }
 
   .footerBottom li {
     list-style: none;
